@@ -1,0 +1,21 @@
+package tasks8to22;
+
+import java.io.File;
+
+public class CreateFile 
+{
+	public static void main(String[] args) 
+	{
+		String path="D:\\FileHandling\\file.txt";
+		File fileName=new File(path);
+		try
+		{
+			fileName.createNewFile();
+		}
+		catch(Exception e)
+		{
+			System.out.println();
+		}
+		System.out.println("File is created");
+	}
+}
